@@ -1,10 +1,13 @@
 {
+  "https" : "https://nishantsorout08.github.io/My_Fitness_Gym",
   "name": "gym-website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
